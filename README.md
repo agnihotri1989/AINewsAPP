@@ -1,7 +1,11 @@
 # AI News App - Android Application
 
 A modern Android news application built with Jetpack Compose that fetches news articles and uses Google's Gemini AI to summarize and read them aloud.
-
+## Screenshots
+<p align="center">
+  <img src="screenshots/1.png" width="220" />
+  <img src="screenshots/2.png" width="220" />
+</p>
 ## Features
 
 ✨ **Core Features:**
