@@ -2,12 +2,13 @@ package com.kshitiz.ainewsapp.service
 
 import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.generationConfig
+import com.kshitiz.ainewsapp.BuildConfig
 
-class GeminiService(private val apiKey: String) {
+class GeminiService() {
 
     private val model = GenerativeModel(
         modelName = "gemini-3-flash-preview",
-        apiKey = apiKey,
+        apiKey = BuildConfig.GEMINI_API_KEY,
         generationConfig = generationConfig {
             temperature = 0.7f
             topK = 40

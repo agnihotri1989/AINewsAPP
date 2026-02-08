@@ -31,8 +31,8 @@ class NewsViewModel(application: Application) : AndroidViewModel(application) {
 
     val isSpeaking: StateFlow<Boolean> = ttsService.isSpeaking
 
-    fun initializeGemini(apiKey: String) {
-        geminiService = GeminiService(apiKey)
+    fun initializeGemini() {
+        geminiService = GeminiService()
     }
 
     fun fetchNews() {

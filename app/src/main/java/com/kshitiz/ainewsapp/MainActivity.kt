@@ -57,12 +57,10 @@ fun NewsApp() {
     val viewModel: NewsViewModel = viewModel()
 
     // Initialize Gemini API
-    // IMPORTANT: Replace with your actual Gemini API key
-    // Get it from: https://makersuite.google.com/app/apikey
-    val GEMINI_API_KEY = "AIzaSyCyYZuRgUb7xcnOOZL-g4IIlVMxdYRpB9E"
+
 
     LaunchedEffect(Unit) {
-        viewModel.initializeGemini(GEMINI_API_KEY)
+        viewModel.initializeGemini()
         viewModel.fetchNews()
     }
 
